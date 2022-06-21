@@ -32,6 +32,9 @@ Downloading dogs-vs-cats.zip to /home/jerome.armand@hpe.com/gl-dvc/images
 (dvc) bash-4.2$ dvc init
 (dvc) bash-4.2$ dvc add images/
 
+(dvc) bash-4.2$ cat .gitignore 
+/images
+
 (dvc) bash-4.2$ dvc remote add -d minio-dvc-bucket s3://dvc-bucket -f
 Setting 'minio-dvc-bucket' as a default remote.
 (dvc) bash-4.2$ dvc remote modify minio-dvc-bucket endpointurl http://192.168.201.71
@@ -39,6 +42,9 @@ Setting 'minio-dvc-bucket' as a default remote.
 (dvc) bash-4.2$ dvc remote modify minio-dvc-bucket secret_access_key <redacted>
 (dvc) bash-4.2$ dvc push -r minio-dvc-bucket --all-commits --all-tags --all-branches
 37394 files pushed   
+
+
+
 
 (dvc) bash-4.2$ cat .dvc/.gitignore 
 /config.local
@@ -50,6 +56,4 @@ Setting 'minio-dvc-bucket' as a default remote.
 # the performance. Learn more at
 # https://dvc.org/doc/user-guide/dvcignore
 
-(dvc) bash-4.2$ cat .gitignore 
-/images
 ```
