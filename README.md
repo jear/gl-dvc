@@ -1,5 +1,5 @@
 # gl-dvc
-
+```
 # Create your bucket here : http://192.168.201.73:9090/buckets   ( redacted / redacted ) 
 
 # From your  Juputer nb in GL MLOps  https://gwtest.gwtest.com:10006/ , 
@@ -51,4 +51,4 @@ Setting 'minio-dvc-bucket' as a default remote.
 
 (dvc) bash-4.2$ cat .gitignore 
 /images
-
+```
