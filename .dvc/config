@@ -1,18 +1,7 @@
 [core]
     remote = minio-dvc-bucket
-['remote "dvc-bucket"']
-    url = s3://dvc-bucket
-    endpointurl = http://192.168.201.71
-    access_key_id = 0u3PSir8rn97Kla2
-    secret_access_key = 5XixhzzsSjjTzOxVzuLap8pbisB0sl83
-    use_ssl = false
-['remote "storage"']
-    url = s3://dvc-bucket/cat-dog-dataset
-['remote "minio"']
-    url = s3://dvc-bucket
-    endpointurl = https://minio.mysite.com
 ['remote "minio-dvc-bucket"']
     url = s3://dvc-bucket
     endpointurl = http://192.168.201.71
-    access_key_id = 0u3PSir8rn97Kla2
-    secret_access_key = 5XixhzzsSjjTzOxVzuLap8pbisB0sl83
+    access_key_id = 
+    secret_access_key = 
